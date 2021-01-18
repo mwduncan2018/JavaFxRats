@@ -9,6 +9,7 @@
 ### 4. c) Java Build Path -> Libraries -> Add a Library -> User Libraries -> New -> Provide a name -> Add External JARs -> C:\Program Files (x86)\Java\jre1.8.0_24\lib\jfxswt.jar
 ### 4. d) Java Build Path -> Libraries -> Add a Library -> JRE System Library -> Workspace default JRE (jdk1.8.0_271)
 ### 5. Add Access Rule -> Right-click the project name and click Properties -> Java Build Path -> Libarries -> Expand the library -> Double-click 'Access rules: No rules defined' -> Add access rule javafx/**
+### 6. Install "e(fx)clipse 3.6.0" from the Eclipse Marketplace
 ## Additional Reources:
 https://www.youtube.com/watch?v=ejx3VxuIc8w&t=235s - 
 https://ssaurel.medium.com/create-your-first-javafx-8-application-with-eclipse-9f77375a24b3 - 

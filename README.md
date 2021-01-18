@@ -13,3 +13,10 @@
 ##### https://www.youtube.com/watch?v=ejx3VxuIc8w&t=235s
 ##### https://ssaurel.medium.com/create-your-first-javafx-8-application-with-eclipse-9f77375a24b3
 ##### https://openjfx.io/openjfx-docs/#install-java
+## Test Automation Info
+https://www.youtube.com/watch?v=PaB0t8NP3Oc
+https://www.youtube.com/watch?v=NG03nNpSmgU
+https://medium.com/information-and-technology/test-driven-development-in-javafx-with-testfx-66a84cd561e0
+https://marathontesting.com/marathonite/testing-javafx-applications/
+https://sites.google.com/a/athaydes.com/renato-athaydes/posts/twosimpletoolstoletyoutestyourswingjavafxapplicationseasily
+https://support.smartbear.com/testcomplete/docs/app-testing/desktop/java-fx/index.html

@@ -1,4 +1,4 @@
-package fxmldemo;
+package scenebuilderdemo;
 
 import java.io.IOException;
 
@@ -9,12 +9,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
-public class SimpleUI extends Application {
+public class HomeUI extends Application {
 
 	public static void main(String[] args) {
 		Application.launch(args);
@@ -22,14 +23,11 @@ public class SimpleUI extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("SimpleUI.fxml"));
-		HBox hBox = loader.load();
+		GridPane gridPane = FXMLLoader.load(getClass().getResource("HomeUI.fxml"));
 		
-		SimpleUIController simpleUIController = loader.getController();
-		System.out.println("Hey I am in the start() method --> " + simpleUIController.textField.getText());
-		
-		Scene scene = new Scene(hBox);
+		Scene scene = new Scene(gridPane);
 		primaryStage.setScene(scene);
+		primaryStage.setTitle("Scene Builder Demo");
 		primaryStage.show();
 
 	}

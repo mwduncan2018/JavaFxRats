@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<HBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml/1"
-									xmlns="http://javafx.com/javafx/8"
-									fx:controller="fxmldemo.SimpleUIController">
-	<Label text="User Name"/>
-	<TextField fx:id="textField"/>
-	<Button text="Connect"/>
+<HBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmldemo.SimpleUIController">
+	<Label text="User Name" />
+	<TextField fx:id="textField" />
+   <Accordion />
+	<Button text="Connect" />
+ <TitledPane animated="false" text="untitled 2">
+      <content>
+      			<Button text="Further Down" />
+      </content>
+ </TitledPane>
+   <RadioButton mnemonicParsing="false" text="RadioButton">
+      <font>
+         <Font name="System Bold Italic" size="12.0" />
+      </font>
+   </RadioButton>
 	<GridPane>
 		<children>
-			<Label text="${textField.text}" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2"/>
-			<Button minWidth="150" text="Down" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-			<Button text="Further Down" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+			<Label text="${textField.text}" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+			<Button minWidth="150" text="Down" GridPane.columnIndex="0" GridPane.rowIndex="2" />
 		</children>
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
 	</GridPane>
 </HBox>

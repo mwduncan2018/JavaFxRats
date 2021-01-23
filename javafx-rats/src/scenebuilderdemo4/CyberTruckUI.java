@@ -27,6 +27,8 @@ public class CyberTruckUI extends Application {
 		
 		Scene scene = new Scene(hBox);
 		primaryStage.setScene(scene);
+		primaryStage.setAlwaysOnTop(true);
+		primaryStage.setResizable(false);
 		primaryStage.setTitle("Mike's Fast Burger Restaurant");
 		primaryStage.show();
 

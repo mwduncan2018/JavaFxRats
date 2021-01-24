@@ -3,6 +3,7 @@ package scenebuilderdemo4;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import javafx.beans.property.ReadOnlyIntegerProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -10,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
@@ -22,6 +24,8 @@ public class CyberTruckController implements Initializable {
     private ComboBox<String> comboProduct;
     @FXML
     private Spinner<Integer> spinnerPercentComplete;
+    @FXML
+    private ProgressBar progressBarPercentComplete;
     @FXML
     private CheckBox chkOrderComplete;
     @FXML
@@ -52,8 +56,10 @@ public class CyberTruckController implements Initializable {
 				} else {
 					chkOrderComplete.setSelected(false);
 				}
+				progressBarPercentComplete.setProgress(1.0 * newValue / 100d);
 			}
-		});
+		});		
+		
 	}
 
 }
